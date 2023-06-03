@@ -90,7 +90,7 @@
     <!-- C站Top版单模型 -->
     <div id="customer" class="container-fuild">
       <div class="container customer-container">
-        <p class="customer-title text-center">C站Top版单模型</p>
+        <p class="customer-title text-center">C站TOP榜单模型陈列</p>
         <div class="swiper-container customer-swiper hidden-xs">
           <div class="swiper-wrapper">
             <div
