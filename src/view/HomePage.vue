@@ -1,6 +1,7 @@
 <template>
   <div id="HomePage">
     <!-- 轮播图 -->
+<!-- 为什么选择我们 -->
     <div id="swiper" class="container-fuild">
       <div class="swiper-container banner-swiper">
         <div class="swiper-wrapper">
@@ -21,8 +22,38 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
+    <div id="whyChooseUs" class="conatiner-fuild">
+      <div class="container">
+        <div class="whyChooseUs-title text-center">
+          <p>为什么选择我们的服务</p>
+          <p>THE REASON TO CHOOSING US</p>
+        </div>
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 server-wrapper"
+            v-for="(item,index) in serverList"
+            :key="index"
+          >
+            <div
+              class="server-block wow slideInUp"
+              onmouseenter="this.style.color='#28f';this.style.borderColor='#28f'"
+              onmouseleave="this.style.color='#666';this.style.borderColor='#00040a'"
+            >
+              <img class="center-block" :src="item.logo" alt="logo">
+              <p class="text-center">{{item.title}}</p>
+              <div
+                class="text-center"
+                v-html="item.content"
+                onmouseenter="this.style.color='#28f'"
+                onmouseleave="this.style.color='#00040a'"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 大数据管理系统 -->
-    <div id="bigData" class="container-fuild">
+    <!-- <div id="bigData" class="container-fuild">
       <div class="row bigData-container">
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
           <img class="img-responsive" src="@/assets/img/img1.png" alt="大数据管理系统">
@@ -38,28 +69,28 @@
           <a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 您身边的IT专家 -->
     <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
-        <h1>您身边的IT专家</h1>
-        <h3>7x24小时提供出色的IT服务</h3>
-        <button
+        <h1>各类AI服务及解决方案</h1>
+        <h3>全方位为你保驾护航</h3>
+        <!-- <button
           class="btn btn-default btn-sm"
           onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
           onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
-        >联系我们</button>
-        <div class="contactUs-contactWay">
+        >联系我们</button> -->
+        <!-- <div class="contactUs-contactWay">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div> -->
       </div>
     </div>
-    <!-- 客户评价 -->
+    <!-- C站Top版单模型 -->
     <div id="customer" class="container-fuild">
       <div class="container customer-container">
-        <p class="customer-title text-center">客户评价</p>
+        <p class="customer-title text-center">C站Top版单模型</p>
         <div class="swiper-container customer-swiper hidden-xs">
           <div class="swiper-wrapper">
             <div
@@ -101,37 +132,6 @@
         </div>
       </div>
     </div>
-    <!-- 为什么选择我们 -->
-    <div id="whyChooseUs" class="conatiner-fuild">
-      <div class="container">
-        <div class="whyChooseUs-title text-center">
-          <p>为什么选择我们的服务</p>
-          <p>THE REASON TO CHOOSING US</p>
-        </div>
-        <div class="row">
-          <div
-            class="col-xs-12 col-sm-6 col-md-3 server-wrapper"
-            v-for="(item,index) in serverList"
-            :key="index"
-          >
-            <div
-              class="server-block wow slideInUp"
-              onmouseenter="this.style.color='#28f';this.style.borderColor='#28f'"
-              onmouseleave="this.style.color='#666';this.style.borderColor='#ccc'"
-            >
-              <img class="center-block" :src="item.logo" alt="logo">
-              <p class="text-center">{{item.title}}</p>
-              <div
-                class="text-center"
-                v-html="item.content"
-                onmouseenter="this.style.color='#28f'"
-                onmouseleave="this.style.color='#ccc'"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 <script>
@@ -145,26 +145,26 @@ export default {
         {
           img: require("@/assets/img/banner1.png"),
           path: "",
-          title: '您身边的IT专家1',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: 'Lora模型定制',
+          content: '真人模型、建筑模型、场景模型、画风模型，应有尽有，只有你想不到，没有我们做不到的',
         },
         {
           img: require("@/assets/img/banner2.jpg"),
           path: "",
-          title: '您身边的IT专家2',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: 'checkout大模型定制',
+          content: '打造自己专属大模型，融会贯通各种lora，让你立于不败之地',
         },
         {
           img: require("@/assets/img/banner1.png"),
           path: "",
-          title: '您身边的IT专家3',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: '私人一对一教学服务',
+          content: '专业导师一对一辅导，跟紧时代步伐，让新的技术在你这里不再“新”',
         },
         {
           img: require("@/assets/img/banner2.jpg"),
           path: "",
-          title: '您身边的IT专家4',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: '商务合作',
+          content: 'AI 正在影响着各行各业的发展，联系我们，让您的企业更进一步发展',
         }
       ],
       customerList: [
@@ -257,22 +257,22 @@ export default {
         {
           logo: require("@/assets/img/tel.png"),
           title: "核心优势1",
-          content: "<p>由专业客服提供人工服务</p>负责疑难问题和故障受理"
+          content: "<p>C站Top版单Lora模型作者ArienTOP</p>熟练的炼丹技巧，炼制你的专属Lora"
         },
         {
           logo: require("@/assets/img/computer.png"),
           title: "核心优势2",
-          content: "<p>利用远程视频工具，提供协助</p>帮助客户进行调试、解决故障"
+          content: "<p>全方位发展的团队</p>职位分布，游戏、软件、美术等多个领域，走在时代前沿"
         },
         {
           logo: require("@/assets/img/qq.png"),
           title: "核心优势3",
-          content: "<p>利用企业QQ提供在线解答</p>帮助企业快速准确解决问题和故障"
+          content: "<p>提供在线课程、一对一指导</p>学习，回顾两不误，不定期更新前沿技术教学"
         },
         {
           logo: require("@/assets/img/skill.png"),
           title: "核心优势4",
-          content: "<p>由技术支持工程师，负责问题解答</p>需求受理及故障受理"
+          content: "<p>专业设计方案</p>不管你来自哪里，从事什么行业，我们都可以希望可以为您排忧解难"
         }
       ]
     };
@@ -311,7 +311,7 @@ export default {
       slidesPerView: 3,
       //自动播放
       autoplay: {
-        delay: 3000,
+        delay: 1000,
         stopOnLastSlide: false,
         disableOnInteraction: false
       },
@@ -385,7 +385,7 @@ export default {
 }
 #bigData .bigData-title {
   padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #00040a;
 }
 #bigData p {
   font-size: 14px;
@@ -450,7 +450,7 @@ export default {
 #customer .customer-logo img {
   width: 94px;
   height: 94px;
-  border: 1px solid #ccc;
+  border: 1px solid #00040a;
 }
 #customer .customer-yh img {
   width: 34px;
@@ -479,8 +479,8 @@ export default {
 }
 #whyChooseUs .server-block {
   padding: 50px 20px;
-  border: 1px solid #ccc;
-  border-bottom: 5px solid #ccc;
+  border: 1px solid #00040a;
+  border-bottom: 5px solid #00040a;
 }
 #whyChooseUs .server-block img {
   width: 48px;
@@ -490,8 +490,9 @@ export default {
   font-size: 20px;
   margin: 30px 0;
 }
+
 #whyChooseUs .server-block > div {
-  color: #ccc;
+  color: #00040a;
 }
 /* 媒体查询（手机） */
 @media screen and (max-width: 768px) {
@@ -564,8 +565,8 @@ export default {
   }
   #whyChooseUs .server-block {
     padding: 50px 0;
-    border: 1px solid #ccc;
-    border-bottom: 5px solid #ccc;
+    border: 1px solid #00040a;
+    border-bottom: 5px solid #00040a;
   }
   #whyChooseUs .server-block img {
     width: 48px;
@@ -576,7 +577,7 @@ export default {
     margin: 30px 0;
   }
   #whyChooseUs .server-block > div {
-    color: #ccc;
+    color: #00040a;
   }
 }
 
