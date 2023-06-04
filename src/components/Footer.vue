@@ -3,17 +3,18 @@
     <div class="logo">
       <img src="@/assets/img/logo_white.png" alt="logo图">
     </div>
-    <p class="title">Cayden国际</p>
-    <p class="address_tel_fax">
-      <span>地址：公司地址公司地址公司地址公司地址</span>
-      <span>Tel：888-888-888</span>
-      <span>Fax：8888-88888888</span>
-    </p>
+    <p class="title">Cayden工作室</p>
+    <!-- <p class="address_tel_fax"> -->
+      <!-- <span>地址：公司地址公司地址公司地址公司地址</span> -->
+      <!-- <span>Tel：133-5303-6335</span> -->
+      <!-- <span>Fax：8888-88888888</span> -->
+    <!-- </p> -->
     <p class="email_wx">
-      <span>邮箱：liyunkun_11@163.com</span>
-      <span>公司微信号：ilyk_gg</span>
+      <span>邮箱：1269695709@qq.com</span>
+      <!-- <span>公司微信号：ilyk_gg</span> -->
     </p>
-    <p class="copy">Copyright &copy; 2018 - 2019 公司名称公司名称</p>
+    <p class="copy">您有需求，我们有技术。期待与您携手共创辉煌！</p>
+    <p class="copy">Copyright &copy; 2077 - 2077 Cayden工作室</p>
   </div>
 </template>
 <script>

@@ -7,9 +7,12 @@
                     <img class="img-responsive center-block" src="@/assets/img/about_img.png">
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
-                    <h3>网站建设文化传播有限公司</h3>
-                    <p class=".text-justify">有家软件公司, 是一家以高科技创意为核心的技术服务公司, 聚集了众多对软件开发和界面设计有独特创意的高端人才, 致力于为企业提供软件开发, 网站建设, 网页设计, IT外包, 手机应用开发, 互联网营销, 微信平台开发等解决方案。</p>
-                    <p class=".text-justify">我们的客户包括集团上市公司, 酒店, IT科技, 教育, 服装, 贸易, 外贸, 时尚, 生物, 工业, 制造等众多行业, 并树立了良好的口碑, 积累了丰富的经验和成功案例. 我们提供权威专业的互联网品牌策划, 并实施高标准的设计方案, 创造真正意义上的品牌网站, 为互联网品牌在互动行销领域创造最大价值而不懈努力!</p>
+                    <h3>Cayden工作室</h3>
+                    <p class=".text-justify">欢迎来到Cayden工作室，我们是专注于AI领域的创新型团队，汇集了一群热衷于探索未来科技的精英人才。在这里，您将遇见来自不同职业背景的优秀团队成员，包括程序员、游戏美术、运营等多角色从业者，共同致力于开创AI领域的新篇章。</p>
+                    <p class=".text-justify">我们的业务范围广泛且多元化，以满足客户不同需求。我们提供StableDiffusion LoRa模型和Checkout模型的定制服务，为您量身打造最适合的解决方案。同时，我们还提供SD和MJ教学以及一对一辅导服务，帮助您在AI领域持续成长和进步。</p>
+                    <p class=".text-justify">此外，Cayden工作室还致力于工艺品原型设计，涵盖手机壳、衣服Logo等多个方面。我们的专业团队将为您精心打造独具特色的设计作品，让您的产品在市场中脱颖而出。</p>
+                    <p class=".text-justify">在Cayden工作室，我们始终坚信创新是推动时代前进的核心力量。因此，我们将继续探索AI领域的新技术、新应用，为客户提供更优质的服务，共同开创美好未来。欢迎您随时联系我们，了解更多关于我们的信息。期待与您携手共创辉煌！</p>
+
                 </div>
             </div>
         </div>
@@ -36,7 +39,7 @@ export default {
     font-size: 30px;
     height: 150px;
     line-height: 150px;
-    background-image: url('../assets/img/banner1.png');
+    background-image: url('../assets/img/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;

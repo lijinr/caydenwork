@@ -71,10 +71,10 @@
       </div>
     </div> -->
     <!-- 您身边的IT专家 -->
-    <div id="contactUs" class="container-fuild text-center">
+    <!-- <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
         <h1>各类AI服务及解决方案</h1>
-        <h3>全方位为你保驾护航</h3>
+        <h3>全方位为你保驾护航</h3> -->
         <!-- <button
           class="btn btn-default btn-sm"
           onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
@@ -85,15 +85,15 @@
           <span></span>
           <span></span>
         </div> -->
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
     <!-- C站Top版单模型 -->
     <div id="customer" class="container-fuild">
       <div class="container customer-container">
-        <p class="customer-title text-center">C站TOP榜单模型陈列</p>
+        <!-- <p class="customer-title text-center">C站TOP榜单模型陈列</p> -->
         <div class="swiper-container customer-swiper hidden-xs">
-          <div class="swiper-wrapper">
-            <div
+          <!-- <div class="swiper-wrapper"> -->
+            <!-- <div
               class="swiper-slide customer-block"
               v-for="(item,index) in customerList"
               :key="index"
@@ -109,7 +109,7 @@
               </div>
               <div class="customer-content2">{{item.title}}</div>
             </div>
-          </div>
+          </div> -->
           <!-- 如果需要导航按钮 -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -155,13 +155,13 @@ export default {
           content: '打造自己专属大模型，融会贯通各种lora，让你立于不败之地',
         },
         {
-          img: require("@/assets/img/banner1.png"),
+          img: require("@/assets/img/banner3.jpg"),
           path: "",
           title: '私人一对一教学服务',
           content: '专业导师一对一辅导，跟紧时代步伐，让新的技术在你这里不再“新”',
         },
         {
-          img: require("@/assets/img/banner2.jpg"),
+          img: require("@/assets/img/banner4.jpg"),
           path: "",
           title: '商务合作',
           content: 'AI 正在影响着各行各业的发展，联系我们，让您的企业更进一步发展',
@@ -256,22 +256,22 @@ export default {
       serverList: [
         {
           logo: require("@/assets/img/tel.png"),
-          title: "核心优势1",
+          title: "业务1",
           content: "<p>C站Top版单Lora模型作者ArienTOP</p>熟练的炼丹技巧，炼制你的专属Lora"
         },
         {
           logo: require("@/assets/img/computer.png"),
-          title: "核心优势2",
+          title: "业务2",
           content: "<p>全方位发展的团队</p>职位分布，游戏、软件、美术等多个领域，走在时代前沿"
         },
         {
           logo: require("@/assets/img/qq.png"),
-          title: "核心优势3",
+          title: "业务3",
           content: "<p>提供在线课程、一对一指导</p>学习，回顾两不误，不定期更新前沿技术教学"
         },
         {
           logo: require("@/assets/img/skill.png"),
-          title: "核心优势4",
+          title: "业务4",
           content: "<p>专业设计方案</p>不管你来自哪里，从事什么行业，我们都可以希望可以为您排忧解难"
         }
       ]
